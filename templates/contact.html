@@ -1,0 +1,102 @@
+{% extends 'base.html' %}
+
+{% block title %}Contact{% endblock %}
+
+{% block content %}
+<!-- Hero Section -->
+<div class="bg-gradient bg-primary text-white py-5 mb-5 rounded-3 shadow">
+    <div class="container text-center">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <i class="bi bi-envelope-heart display-1 mb-3"></i>
+                <h1 class="display-3 fw-bold mb-3">Get In Touch</h1>
+                <p class="lead fs-4 mb-4">Let's discuss your next project</p>
+                <p class="fs-5 mb-0">
+                    Ready to collaborate on innovative solutions? Drop me a message and let's create something amazing together.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Contact Form Section -->
+<div class="row justify-content-center">
+    <div class="col-lg-8">
+        <div class="card border-0 shadow-lg">
+            <div class="card-body p-5">
+                <!-- Contact Info -->
+                <div class="text-center mb-5">
+                    <div class="row g-4 mb-4">
+                        <div class="col-md-12">
+                            <div class="p-4 bg-light rounded-3">
+                                <i class="bi bi-envelope-fill text-primary fs-3 mb-3"></i>
+                                <h5 class="mb-2">Email Me</h5>
+                                <a href="mailto:rasti.soroush@gmail.com" class="text-decoration-none fs-5">
+                                    rasti.soroush@gmail.com
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-light p-4 rounded-3">
+                    <h3 class="text-center mb-4">
+                        <i class="bi bi-chat-dots text-primary me-2"></i>Send a Message
+                    </h3>
+                    <form>
+                        <div class="row g-3">
+                            <div class="col-md-6">
+                                <label for="name" class="form-label fw-semibold">Your Name</label>
+                                <input type="text" class="form-control form-control-lg" id="name" placeholder="Enter your name" required>
+                            </div>
+                            <div class="col-md-6">
+                                <label for="email" class="form-label fw-semibold">Your Email</label>
+                                <input type="email" class="form-control form-control-lg" id="email" placeholder="Enter your email" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="subject" class="form-label fw-semibold">Subject</label>
+                                <input type="text" class="form-control form-control-lg" id="subject" placeholder="What's this about?" required>
+                            </div>
+                            <div class="col-12">
+                                <label for="message" class="form-label fw-semibold">Message</label>
+                                <textarea class="form-control form-control-lg" id="message" rows="5" placeholder="Tell me about your project or idea..." required></textarea>
+                            </div>
+                            <div class="col-12 text-center mt-4">
+                                <button type="submit" class="btn btn-primary btn-lg px-5 py-3">
+                                    <i class="bi bi-send me-2"></i>Send Message
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- Additional Contact Methods -->
+                <div class="row g-4 mt-4">
+                    <div class="col-md-4 text-center">
+                        <div class="p-3">
+                            <i class="bi bi-linkedin text-primary fs-2 mb-2"></i>
+                            <h6>LinkedIn</h6>
+                            <small class="text-muted">Connect professionally</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="p-3">
+                            <i class="bi bi-github text-primary fs-2 mb-2"></i>
+                            <h6>GitHub</h6>
+                            <small class="text-muted">View my projects</small>
+                        </div>
+                    </div>
+                    <div class="col-md-4 text-center">
+                        <div class="p-3">
+                            <i class="bi bi-telephone text-primary fs-2 mb-2"></i>
+                            <h6>Schedule Call</h6>
+                            <small class="text-muted">Let's talk directly</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
